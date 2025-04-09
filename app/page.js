@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />  {/* Utilisation du Header */}
+     
       <main className="flex flex-col gap-[32px] items-center justify-center flex-1">
       <Image  className="rounded-full"
           src="/image/headShot.jpg" // Remplace par le chemin vers ta photo
