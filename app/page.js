@@ -16,7 +16,7 @@ export default function Home() {
         />
         <h1 className="text-2xl font-semibold"> Bonjour, je suis Sara !</h1>
         <p className="text-center sm:text-left mt-4">
-          Développeuse web passionnée par les technologies modernes. Je maîtrise des outils comme React, Next.js et Node.js.
+        Développeuse finissante en programmation informatique passionnée par les technologies modernes. Je maîtrise des outils comme React, Next.js et Node.js.
         </p>
         <h2 className="mt-8 text-xl font-medium">Mes compétences :</h2>
         <ul className="list-disc pl-6">
