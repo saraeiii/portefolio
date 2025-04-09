@@ -31,12 +31,6 @@ export default function Header() {
               Témoignages
             </Link>
           </li>
-          <li>
-            <Link href="/contact" className="hover:text-gray-400">
-              Contact
-            </Link>
-          </li>
-          
           {/* Lien Connexion/Déconnexion */}
           {currentUser ? (
             <>

@@ -44,7 +44,7 @@ export default function ProjectDetail({ params }) {
 
   return (
     <>
-      <Header />
+      
       
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Bouton retour */}
@@ -136,7 +136,7 @@ export default function ProjectDetail({ params }) {
         </div>
       </main>
 
-      <Footer />
+    
     </>
   );
 }

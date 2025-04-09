@@ -1,5 +1,4 @@
-import Header from '@/app/components/Header';
-import Footer from '@/app/components/Footer';
+import AuthGuard from '@/app/components/AuthGuard'
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -24,7 +23,7 @@ export default function ProjectsList() {
   return (
     <>
    
-      
+   <AuthGuard>
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-8">Mes Projets</h1>
         
@@ -61,12 +60,16 @@ export default function ProjectsList() {
                   </div>
                 </div>
               </div>
+              
             </Link>
+            
           ))}
+          
         </div>
+        
       </main>
 
-     
+      </AuthGuard>
     </>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 import { useSelector } from 'react-redux';
 import Link from 'next/link';
+import AuthGuard from '@/app/components/AuthGuard'
 
 
 export default function TestimonialsPage() {
@@ -8,6 +9,7 @@ export default function TestimonialsPage() {
   const { currentUser } = useSelector(state => state.auth);
 
   return (
+    <AuthGuard>
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">Témoignages</h1>
       
@@ -40,8 +42,10 @@ export default function TestimonialsPage() {
               </Link>
             )}
           </div>
+          
         ))}
       </div>
     </div>
+    </AuthGuard>
   );
 }
